@@ -1,7 +1,7 @@
-# pytune
+# tunein-cli
 
 ## Overview
-pytune allows you to browse TUNEIN streams and listen to them.
+tunein-cli allows you to browse TUNEIN streams from your command line and listen to them.
 
 ## Requirements
 - untangle
@@ -13,8 +13,8 @@ pytune allows you to browse TUNEIN streams and listen to them.
 
 ## Installation
 ```
-   $ git clone "https://github.com/Kaanthegmr/pytune"
-   $ cd pytune
+   $ git clone "https://github.com/Kaanthegmr/tunein-cli"
+   $ cd tunein-cli
    $ python tunein.py
    ```
 ## Usage
