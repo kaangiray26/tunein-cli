@@ -14,7 +14,7 @@ tunein-cli allows you to browse TUNEIN streams from your command line and listen
 ## Installation
 ```
    $ git clone "https://github.com/Kaanthegmr/tunein-cli"
-   $ cd tunein-cli
+   $ cd tunein-cli-master
    $ python tunein.py
    ```
 ## Usage
