@@ -62,7 +62,7 @@ def playlist(url,title):
         kill=raw_input("exit:")
         os.system("pkill -9 mplayer")
         exit()
-    else:
+    elif run == "false":
         try:
             title.encode('ascii')
             new_title=title
@@ -84,8 +84,11 @@ def playlist(url,title):
         file.close()
         print "done"
         exit()
+    elif run == "info":
+        exit()
 
 def typelist():
+    os.system("clear && printf '\e[3J'")
     out=[]
     obj=get(source,"true")
     for i in obj.opml.body.outline:
@@ -99,6 +102,8 @@ def typelist():
         a+=1
     sys.stdout.write("\r%s" %("\n".join(out)))
     choice=input("\nType:")
+    if choice == -1:
+        exit()
     choice-=1
     st_url=type[type.keys()[choice]]
     return st_url
@@ -128,6 +133,8 @@ def morelist(more):
     print "Choose a station from the list:"
     sys.stdout.write("\r%s" %("\n".join(out)))
     choice=input("\nStation:")
+    if choice == -1:
+        exit()
     choice-=1
     st_title=station.keys()[choice]
     st_url=station[station.keys()[choice]]
@@ -142,7 +149,10 @@ def morelist(more):
 def stationlist(st_url):
     out=[]
     stream=get(st_url,"true")
-    for i in stream.opml.body.outline[0].outline:
+    for key in stream.opml.body.outline:
+        if key['key'] == "stations":
+            target=stream.opml.body.outline.index(key)
+    for i in stream.opml.body.outline[target].outline:
         station[i["text"]]=i["URL"]
     a=1
     for i in station.keys():
@@ -159,11 +169,14 @@ def stationlist(st_url):
     print "Choose a station from the list:"
     sys.stdout.write("\r%s" %("\n".join(out)))
     choice=input("\nStation:")
+    if choice == -1:
+        exit()
     choice-=1
     st_title=station.keys()[choice]
     st_url=station[station.keys()[choice]]
     newurl=get(st_url,"false")
     if newurl.count('\n') == 1:
+        print "return"
         return newurl,st_title
     else:
         morelist(newurl)
@@ -171,8 +184,15 @@ def stationlist(st_url):
 #START from HERE
 global run
 run="false"
-if raw_input("Do you want to open stream(y/n):") == "y":
+os.system("clear && printf '\e[3J'")
+print "[1]:Open stream\n[2]Download stream\n[3]Show stream info"
+config=raw_input("Select configuration:")
+if config == "1":
     run="true"
+elif config == "2":
+    run="false"
+elif config == "3":
+    run="info"
 st_url=typelist()
 newurl,st_title=stationlist(st_url)
 playlist(newurl,st_title)
