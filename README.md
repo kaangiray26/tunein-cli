@@ -39,6 +39,6 @@ Use your keyboard navigate through options.
 >   [8]: Exit  
 
 ## Compability
-- Linux :+1:
-- macOS :+1:
-- Windows :-1: (**without coloring and mplayer function**)
+- Linux :heavy_check_mark:  
+- macOS :heavy_check_mark:  
+- Windows :heavy_multiplication_x: (**without coloring and mplayer function**)
