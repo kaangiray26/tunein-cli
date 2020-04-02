@@ -4,13 +4,13 @@
 tunein-cli allows you to browse TUNEIN streams from your command line and listen to them.
 
 ## Features
--Open streams directly from your terminal using mplayer
--Download streams as .pls files
--Printout stream url source
--Open streams in browser
--Add streams to favourites
--Add custom streams using urls to favourites
--Play stations from favourites
+- Open streams directly from your terminal using mplayer  
+- Download streams as .pls files  
+- Printout stream url source  
+- Open streams in browser  
+- Add streams to favourites  
+- Add custom streams using urls to favourites  
+- Play stations from favourites  
 
 ## Requirements
 - untangle
