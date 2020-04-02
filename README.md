@@ -1,7 +1,8 @@
 # tunein-cli
 
 ## Overview
-tunein-cli allows you to browse TUNEIN streams from your command line and listen to them.
+tunein-cli allows you to browse TUNEIN streams from your command line and listen to them.  
+Uses http://opml.radiotime.com/ to get stations.
 
 ## Features
 - Open streams directly from your terminal using mplayer  
