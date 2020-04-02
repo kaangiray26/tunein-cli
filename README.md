@@ -3,28 +3,40 @@
 ## Overview
 tunein-cli allows you to browse TUNEIN streams from your command line and listen to them.
 
+## Features
+-Open streams directly from your terminal using mplayer
+-Download streams as .pls files
+-Printout stream url source
+-Open streams in browser
+-Add streams to favourites
+-Add custom streams using urls to favourites
+-Play stations from favourites
+
 ## Requirements
 - untangle
-  - ```pip install untangle```
-- curses
 - requests
 - mplayer
-  - ```apt-get install mplayer``` or ```brew install mplayer```
+  - ```apt-get install mplayer``` or ```brew install mplayer``` or ```sudo pacman -S mplayer```
 
 ## Installation
 ```
    $ git clone "https://github.com/Kaanthegmr/tunein-cli"
    $ cd tunein-cli-master
+   $ pip install -r requirements.txt
    $ python tunein.py
    ```
 ## Usage
-Once you start the program you will see this line 
-> Do you want to open stream(y/n):  
-
-If you answer with *y*,stream will be opened with mplayer automatically.  
-Answering with *n* results in a creation of a .pls file that can be imported into a media player to open the stream.
-
-After that you can use the numbers on the screen to navigate through pages.
+Once you start the program you will see the following output:
+Use your keyboard navigate through options.
+>   [?] Select Option::  
+>   [1]: Open Stream  
+>   [2]: Download Stream  
+>   [3]: Show Stream Source  
+>   [4]: Open In Browser  
+>   [5]: Add to Favourites  
+>   [6]: Add custom station  
+>   [7]: Favourites  
+>   [8]: Exit  
 
 ## Compability
 - Linux
