@@ -5,13 +5,13 @@ tunein-cli allows you to browse TUNEIN streams from your command line and listen
 Uses **http://opml.radiotime.com/** to get stations.
 
 ## Features
-- Open streams directly from your terminal using mplayer  
-- Download streams as .pls files  
-- Printout stream url source  
-- Open streams in browser  
-- Add streams to favourites  
-- Add custom streams using urls to favourites  
-- Play stations from favourites  
+- __Open streams directly from your terminal using mplayer__  
+- __Download streams as .pls files__  
+- __Printout stream url source__  
+- __Open streams in browser__  
+- __Add streams to favourites__  
+- __Add custom streams using urls to favourites__  
+- __Play stations from favourites__  
 
 ## Requirements
 - untangle
@@ -42,4 +42,4 @@ Use your keyboard navigate through options.
 ## Compability
 - Linux
 - macOS
-- Windows(**without coloring and mplayer function**)
+- Windows (**without coloring and mplayer function**)
