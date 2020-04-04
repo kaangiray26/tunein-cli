@@ -17,7 +17,8 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
 - untangle (__v1.1.1__)
 - requests (__v2.23.0__)
 - mplayer
-  - ```apt-get install mplayer``` or ```brew install mplayer``` or ```sudo pacman -S mplayer```
+  - ```apt-get install mplayer``` or ```brew install mplayer``` or ```sudo pacman -S mplayer```  
+  - for windows download from the [website](https://oss.netfarm.it/mplayer/).
 
 ## Installation
 ```
