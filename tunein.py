@@ -21,6 +21,9 @@ GO_HOME = '\x1b[H'
 SCROLL = '\x1b[1000M'
 sys.stdout.write(ERASE_LINE)
 sys.stdout.write(GO_HOME)
+erase="clear && printf '\e[3J'"
+if "Windows" in platform.system():
+    erase="cls"
 
 #check mplayer
 try:
@@ -43,7 +46,7 @@ def get(url,s):
 def scrape(url,keyword):
     if url=="":
         url=source
-    os.system("clear && printf '\e[3J'")
+    os.system(erase)
     out=['<<back']
     dup_out=['<<back']
     type={}
@@ -171,7 +174,7 @@ def playlist(url,title):
 def main():
     global run
     run="false"
-    os.system("clear && printf '\e[3J'")
+    os.system(erase)
     ask1=[inquirer.List('opt',message="Select Option:",choices=[
         '[1]'+bold(': Open Stream'),
         '[2]'+bold(': Download Stream'),
@@ -211,7 +214,7 @@ def main():
                 favlist[" ".join(item.split()[0:-1])]=item.split()[-1]
                 dupfavlist.append(" ".join(item.split()[0:-1]))
                 dup2favlist.append(bold(" ".join(item.split()[0:-1])))
-        os.system("clear && printf '\e[3J'")
+        os.system(erase)
         ask2=[inquirer.List('opt',message="Choose:",choices=dup2favlist)]
         ans2=inquirer.prompt(ask2)['opt']
         if ans2 == "<<back":
