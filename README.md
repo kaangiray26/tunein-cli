@@ -23,7 +23,7 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
 ## Installation
 ```
    $ git clone "https://github.com/Kaanthegmr/tunein-cli"
-   $ cd tunein-cli-master
+   $ cd tunein-cli
    $ pip install -r requirements.txt
    $ python tunein.py
    ```
