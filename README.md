@@ -13,9 +13,9 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
 - _Play stations from favourites_  
 
 ## Requirements
-- inquirer (version 2.6.3)
-- untangle
-- requests
+- inquirer (__v2.6.3__)
+- untangle (__v1.1.1__)
+- requests (__v2.23.0__)
 - mplayer
   - ```apt-get install mplayer``` or ```brew install mplayer``` or ```sudo pacman -S mplayer```
 
