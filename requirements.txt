@@ -2,3 +2,4 @@ inquirer >= 2.6.3
 untangle >= 1.1.1
 requests >= 2.23.0
 windows-curses; sys_platform == 'win32'
+PyInquirer; sys_platform == 'win32'
