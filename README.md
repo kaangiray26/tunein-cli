@@ -50,7 +50,7 @@ Use your keyboard navigate through options.
 ## Compability
 - Linux :heavy_check_mark:  
 - macOS :heavy_check_mark:  
-- Windows :heavy_multiplication_x: (**without coloring and mplayer function**)
+- Windows :heavy_check_mark: (**no coloring and some bugs**)
 
 ## Troubleshoot
 If you're on a Linux system, consider doing the following changes:
