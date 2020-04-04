@@ -32,6 +32,7 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
    $ pip install -r requirements.txt
    $ python tunein.py
    ```
+   If you're on Windows, run ```python tunein_win.py```
 ## Usage
 Once you start the program you will see the following output:
 Use your keyboard navigate through options.
