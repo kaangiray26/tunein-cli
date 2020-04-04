@@ -210,7 +210,6 @@ def main():
         fav=open("fav_st.txt","r").read().splitlines()
         for item in fav:
             if len(item)!=0:
-                print "ITEM:",item.split()[0:-1]
                 favlist[" ".join(item.split()[0:-1])]=item.split()[-1]
                 dupfavlist.append(" ".join(item.split()[0:-1]))
                 dup2favlist.append(bold(" ".join(item.split()[0:-1])))
