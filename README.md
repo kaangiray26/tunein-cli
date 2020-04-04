@@ -13,7 +13,7 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
 - _Play stations from favourites_  
 
 ## Requirements
-- inquirer
+- inquirer (version 2.6.3)
 - untangle
 - requests
 - mplayer
