@@ -26,6 +26,7 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
   - After the installation puth your mplayer directory path to your system environment variables under "Path"
 
 ## Installation
+   - On osx and linux:
 ```
    $ git clone "https://github.com/Kaanthegmr/tunein-cli"
    $ cd tunein-cli
