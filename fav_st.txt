@@ -1,4 +1,3 @@
 101.5 | CIBL 101,5 Montréal (French Music) http://stream02.ustream.ca:8000/cibl128.mp3
 Radyo Eksen 96.2 (Alternative Rock) http://eksenwmp.radyotvonline.com:80/
 Kent FM 101.4 (Classic Hits) http://46.20.7.101:80/stream/268/;
-Standart.FM http://mn-nl.mncdn.com/kaybedenlerkulubu/live/chunklist.m3u8
