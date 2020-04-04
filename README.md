@@ -18,8 +18,11 @@ __tunein-cli__ allows you to browse TUNEIN streams from your command line and li
 - requests (__v2.23.0__)
 - windows-curses (__windows only__)
 - mplayer
+  #### for osx and linux:
   - ```apt-get install mplayer``` or ```brew install mplayer``` or ```sudo pacman -S mplayer```  
-  - for windows download from the [website](https://oss.netfarm.it/mplayer/).
+  #### for windows: 
+  - download from the [website](https://oss.netfarm.it/mplayer/).
+  - After the installation puth your mplayer directory path to your system environment variables under "Path"
 
 ## Installation
 ```
